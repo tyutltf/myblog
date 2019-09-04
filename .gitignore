@@ -1,0 +1,10 @@
+# Byte-compiled / optimized / DLL files 缓存文件
+__pycache__/
+*.py[cod]
+*$py.class
+
+# virtualenv  虚拟环境
+.venv
+venv/
+ENV/
+
