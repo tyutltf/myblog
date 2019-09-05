@@ -8,3 +8,5 @@ __pycache__/
 venv/
 ENV/
 
+# 自定义配置
+.vscode/
