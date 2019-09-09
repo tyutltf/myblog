@@ -1,14 +1,21 @@
 from flask import Flask, redirect, render_template, url_for
-from myblog.blueprints import um
+from myblog.blueprints import um, bl
 
 app = Flask(__name__)
 app.register_blueprint(um.um)
+app.register_blueprint(bl.bl)
 
 
 @app.route('/')
 def index():
     # 主页路由
     return redirect(url_for("um.main"))
+
+
+@app.route('/login')
+def login():
+    # 登录后台管理
+    return render_template("admin.html")
 
 
 def run_server():

@@ -10,3 +10,4 @@ ENV/
 
 # 自定义配置
 .vscode/
+.idea/
