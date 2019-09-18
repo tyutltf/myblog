@@ -10,7 +10,9 @@
     <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
     <link rel="stylesheet" href="{{ url_for('static', filename='css/bootstrap.css') }}">
 
-    {% block head %}{% endblock %}
+    {% block head %}
+
+    {% endblock %}
 
 </head>
 
@@ -75,6 +77,10 @@
 
         {% endblock %}
     </div>
+
+    {% block js %}
+
+    {% endblock %}
 
 </body>
 
