@@ -292,5 +292,10 @@ h2{ color: #7f8c8d; font-family: Neucha, Arial, sans serif; font-size:18px; marg
 }
 
 
+.img_1{
+	background: url('../images/1.jpg');
+	background-size: 100% auto;
+	background-repeat: no-repeat;
+}
 
 
