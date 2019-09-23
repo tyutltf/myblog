@@ -121,7 +121,7 @@ body {
     width: 90%;
     height:100%;
     margin-left: 130px;
-    background: #00bbbb;
+    background: gold;
 }
 
 .sy_height_1{
@@ -152,7 +152,7 @@ body {
 }
 
 #slider-wrap ul#slider{
-	width:100%;
+	width:600px;
 	height:100%;
 	position:absolute;
 	top:0;
@@ -298,4 +298,33 @@ h2{ color: #7f8c8d; font-family: Neucha, Arial, sans serif; font-size:18px; marg
 	background-repeat: no-repeat;
 }
 
+.img_2{
+	background: url('../images/2.jpg');
+	background-size: 100% auto;
+	background-repeat: no-repeat;
+}
+
+.img_3{
+	background: url('../images/3.jpg');
+	background-size: 100% auto;
+	background-repeat: no-repeat;
+}
+
+.img_4{
+	background: url('../images/4.jpg');
+	background-size: 100% auto;
+	background-repeat: no-repeat;
+}
+
+.img_5{
+	background: url('../images/5.jpg');
+	background-size: 100% auto;
+	background-repeat: no-repeat;
+}
+
+.echart1{
+	width: 400px;
+	height: 95%;
+	background: white;
+}
 

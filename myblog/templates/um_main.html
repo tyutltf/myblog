@@ -6,48 +6,42 @@
 
 <div class="container-fluid">
     <div class="row">
-        <div class="col-md-3 sy_height_1">
+        <div class="col-md-3 col-sm-4 sy_height_1">
+            自我介绍的竖版柱状
         </div>
-        <div class="col-md-6 sy_height_1">
+        <div class="col-md-5 col-sm-4 sy_height_1">
             <div id="wrapper">
                 <div id="slider-wrap">
                     <ul id="slider">
                         <li class="img_1">
                             <div>
-
+                                <h4>鸟巢</h4>
                             </div>
                         </li>
 
-                        <li data-color="#3498db">
+                        <li class="img_2">
                             <div>
-                                <h3>Slide #2</h3>
-                                <span>Sub-title #2</span>
+                                <h4>晋祠</h4>
                             </div>
-                            <i class="fa fa-gears"></i>
                         </li>
 
-                        <li data-color="#9b59b6">
+                        <li class="img_3">
                             <div>
-                                <h3>Slide #3</h3>
-                                <span>Sub-title #3</span>
+                                <h4>中央电视台</h4>
+                                <!-- <span>别名大裤衩子</span> -->
                             </div>
-                            <i class="fa fa-sliders"></i>
                         </li>
 
-                        <li data-color="#34495e">
+                        <li class="img_4">
                             <div>
-                                <h3>Slide #4</h3>
-                                <span>Sub-title #4</span>
+                                <h4>北海公园</h4>
                             </div>
-                            <i class="fa fa-code"></i>
                         </li>
 
-                        <li data-color="#e74c3c">
+                        <li class="img_5">
                             <div>
-                                <h3>Slide #5</h3>
-                                <span>Sub-title #5</span>
+                                <h4>长城</h4>
                             </div>
-                            <i class="fa fa-microphone-slash"></i>
                         </li>
                     </ul>
 
@@ -62,7 +56,61 @@
 
             </div>
         </div>
-        <div class="col-md-3 sy_height_1">.col-md-4</div>
+        <div class="col-md-4 col-sm-4 sy_height_1">
+            <div id="echart1" class="echart1">
+                <script type="text/javascript">
+                    //初始化echarts实例
+                    var myChart = echarts.init(document.getElementById('echart1'));
+                    var option = {
+                        tooltip: {
+                            trigger: 'item',
+                            formatter: "{a} <br/>{b}: {c} ({d}%)"
+                        },
+                        legend: {
+                            orient: 'vertical',
+                            x: 'left',
+                            data: ['PythonFlask', 'Python爬虫', 'MySql', 'Mongo', 'CSS,JS']
+                        },
+                        series: [
+                            {
+                                name: '职业技能',
+                                type: 'pie',
+                                radius: ['50%', '70%'],
+                                avoidLabelOverlap: false,
+                                label: {
+                                    normal: {
+                                        show: false,
+                                        position: 'center'
+                                    },
+                                    emphasis: {
+                                        show: true,
+                                        textStyle: {
+                                            fontSize: '30',
+                                            fontWeight: 'bold'
+                                        }
+                                    }
+                                },
+                                labelLine: {
+                                    normal: {
+                                        show: false
+                                    }
+                                },
+                                data: [
+                                    { value: 450, name: 'PythonFlask' },
+                                    { value: 300, name: 'Python爬虫' },
+                                    { value: 150, name: 'MySql' },
+                                    { value: 150, name: 'Mongo' },
+                                    { value: 150, name: 'CSS,JS' }
+                                ]
+                            }
+                        ]
+                    };
+                    //使用制定的配置项和数据显示图表
+                    myChart.setOption(option);
+
+                </script>
+            </div>
+        </div>
     </div>
     <div class="row">
         <div class="col-sm-3 sy_height_2">.col-md-6</div>
@@ -85,4 +133,5 @@
 <!-- 自己引入的js -->
 <script src="{{ url_for('static', filename='js/jquery.min.js') }}"></script>
 <script src="{{ url_for('static', filename='js/index.js') }}"></script>
+
 {% endblock %}
