@@ -19,7 +19,7 @@ def login():
 
 
 def run_server():
-    app.run(host='127.0.0.1', port=8000, debug=True)
+    app.run(host='127.0.0.1', port=8080, debug=True)
 
 # 测试 git
 
