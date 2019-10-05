@@ -222,8 +222,8 @@ body {
 	background:rgba(0,0,0,0.3);	
 }
 
-#next{right:-50px; border-radius:7px 0px 0px 7px;}
-#previous{left:-50px; border-radius:0px 7px 7px 7px;}
+#next{right:-10%; border-radius:7px 0px 0px 7px;}
+#previous{left:-10%;border-radius:0px 7px 7px 7px;}
 #counter{
 	top: 30px; 
 	right:35px; 
@@ -259,15 +259,15 @@ body {
 	background:#fff;
 	opacity:0.5;
 	position:relative;
-  top:0;
+  	top:0;
   
   
 }
 
 #pagination-wrap ul li.active{
-  width:12px;
-  height:12px;
-  top:3px;
+  	width:12px;
+  	height:12px;
+  	top:3px;
 	opacity:1;
 	box-shadow:rgba(0,0,0,0.1) 1px 1px 0px;	
 }
@@ -330,9 +330,63 @@ h2{ color: #7f8c8d; font-family: Neucha, Arial, sans serif; font-size:18px; marg
 }
 
 .python{
-	height: 100%;
-	background: url('../images/5.jpg');
+	margin-top: 13%;
+	height: 80%;
+	background: url('../images/python.jpg');
 	background-size: 100% auto;
 	background-repeat: no-repeat;
 }
 
+.flask{
+	margin-top: 13%;
+	height: 80%;
+	background: url('../images/flask.jpg');
+	background-size: 100% auto;
+	background-repeat: no-repeat;
+}
+
+.pachong{
+	margin-top: 9%;
+	height: 80%;
+	background: url('../images/pachong.jpg');
+	background-size: 100% auto;
+	background-repeat: no-repeat;
+}
+
+.numpy{
+	margin-top: 10%;
+	height: 78%;
+	background: url('../images/numpy.jpg');
+	background-size: 100% auto;
+	background-repeat: no-repeat;
+}
+
+.bs{
+	margin-top: 20%;
+	height: 60%;
+	background: url('../images/bs.jpg');
+	background-size: 100% auto;
+	background-repeat: no-repeat;
+}
+
+.js{
+	height: 100%;
+	background: url('../images/js.jpg');
+	background-size: 100% auto;
+	background-repeat: no-repeat;
+}
+
+.vue{
+	height: 100%;
+	background: url('../images/vue.jpg');
+	background-size: 100% auto;
+	background-repeat: no-repeat;
+}
+
+.mysql{
+	top:15%;
+	height: 80%;
+	background: url('../images/mysql.jpg');
+	background-size: 100% auto;
+	background-repeat: no-repeat;
+}
