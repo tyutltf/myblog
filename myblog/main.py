@@ -1,9 +1,10 @@
 from flask import Flask, redirect, render_template, url_for
-from myblog.blueprints import um, bl
+from myblog.blueprints import um, bl, mg
 
 app = Flask(__name__)
 app.register_blueprint(um.um)
 app.register_blueprint(bl.bl)
+app.register_blueprint(mg.mg)
 
 
 @app.route('/')
@@ -20,8 +21,6 @@ def login():
 
 def run_server():
     app.run(host='127.0.0.1', port=8080, debug=True)
-
-# 测试 git
 
 
 if __name__ == "__main__":
