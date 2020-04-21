@@ -20,7 +20,7 @@ def login():
 
 
 def run_server():
-    app.run(host='127.0.0.1', port=647, debug=True)
+    app.run(host='127.0.0.1', port=8844, debug=True)
 
 
 if __name__ == "__main__":
