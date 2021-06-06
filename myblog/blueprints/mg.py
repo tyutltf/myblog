@@ -1,10 +1,12 @@
 """后台管理
 """
-from flask import Blueprint, render_template, redirect, url_for, request
+from flask import Blueprint, render_template, request
 
 mg = Blueprint('mg', __name__, url_prefix="/mg")
 
 # 主页
+
+
 @mg.route('/main/', methods=['GET', 'POST'])
 def main():
     if request.method == "POST":
